@@ -2,14 +2,14 @@
 import './App.css'
 
 function App() {
-  // function iframeLoaded() {
-  //   var iFrameID = document.getElementById('idIframe');
-  //   if (iFrameID) {
-  //     // here you can make the height, I delete it first, then I make it again
-  //     iFrameID.height = "";
-  //     iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-  //   }
-  // }
+  function iframeLoaded() {
+    var iFrameID = document.getElementById('idIframe');
+    if (iFrameID) {
+      // here you can make the height, I delete it first, then I make it again
+      iFrameID.height = "";
+      iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+    }
+  }
   return (
     <>
       <div>
@@ -24,7 +24,7 @@ function App() {
       </div>
       <div className='row'>
         <div className='container '>
-          <iframe id="idIframe" className='helzbergpgems-frame' src="https://prod.dlgbconfigurator.com/" frameborder="0"></iframe>
+          <iframe id="idIframe" className='helzbergpgems-frame' src="https://prod.dlgbconfigurator.com/" onLoad={iframeLoaded} frameborder="0"></iframe>
         </div>
         <div>
         </div>
