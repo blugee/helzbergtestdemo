@@ -8,9 +8,9 @@
 
 .helzbergpgems-frame {
   width: 100%;
-  /* height: auto; */
+  height: auto;
   border: 0;
-  /* min-height: 4790px; */
+  min-height: 4790px;
 }
 .row {
   display: flex;
