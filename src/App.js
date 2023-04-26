@@ -12,7 +12,7 @@ function App() {
     }
   }
 
-  // window.addEventListener("message", displayMessage, false);
+  window.addEventListener("message", displayMessage, false);
   return (
     <>
       <div>
