@@ -2,14 +2,17 @@
 import './App.css'
 
 function App() {
-  function iframeLoaded() {
-    var iFrameID = document.getElementById('idIframe');
-    if (iFrameID) {
-      // here you can make the height, I delete it first, then I make it again
+  function displayMessage(event) {
+    let message = event.data
+    if (message.height) {
+      console.log("message>>>", message);
+      var iFrameID = document.getElementById('idIframe');
       iFrameID.height = "";
-      iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      iFrameID.height = `${message.height}px`;
     }
   }
+
+  window.addEventListener("message", displayMessage, false);
   return (
     <>
       <div>
@@ -24,7 +27,7 @@ function App() {
       </div>
       <div className='row'>
         <div className='container '>
-          <iframe id="idIframe" className='helzbergpgems-frame' src="https://prod.dlgbconfigurator.com/" onLoad={iframeLoaded} frameborder="0"></iframe>
+          <iframe id="idIframe" className='helzbergpgems-frame' src="http://localhost:3000/" frameborder="0" height={"4790px"}></iframe>
         </div>
         <div>
         </div>
