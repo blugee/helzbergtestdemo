@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   function displayMessage(event) {
     let message = event.data
-    if (message.height >= 3300) {
+    if (message.height >= 3300 || message.height <= 1000) {
       var iFrameID = document.getElementById('idIframe');
       iFrameID.height = "";
       iFrameID.height = `${message.height}px`;
