@@ -26,7 +26,7 @@ function App() {
       </div>
       <div className='row'>
         <div className='container '>
-          <iframe id="idIframe" className='helzbergpgems-frame' src="http://localhost:3000/" frameborder="0" height={"4790px"}></iframe>
+          <iframe id="idIframe" className='helzbergpgems-frame' src="https://testv2.du2lriif9t2hk.amplifyapp.com/" frameborder="0" height={"4790px"}></iframe>
         </div>
         <div>
         </div>
