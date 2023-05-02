@@ -26,7 +26,7 @@ function App() {
       </div>
       <div className='row'>
         <div className='container '>
-          <iframe id="idIframe" className='helzbergpgems-frame' src="https://testv1.dlgbconfigurator.com/" frameborder="0" height={"4790px"}></iframe>
+          <iframe id="idIframe" className='helzbergpgems-frame' src="https://dev.dlgbconfigurator.com/" frameborder="0" height={"4790px"}></iframe>
         </div>
         <div>
         </div>
